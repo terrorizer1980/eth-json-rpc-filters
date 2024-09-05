@@ -1904,6 +1904,15 @@ eth-block-tracker@^4.4.1:
     pify "^3.0.0"
     safe-event-emitter "^1.0.1"
 
+eth-block-tracker@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/eth-block-tracker/-/eth-block-tracker-5.0.1.tgz#c5ad39902bd0454223b601ec0874f9fcc9f30eed"
+  integrity sha512-NVs+JDSux0FdmOrl3A2YDcQFkkYf9/qW9irvPmtC7bhMoPAe6oBlaqqe/m9Ixh5rkKqAox4mEyWGpsFmf/IsNw==
+  dependencies:
+    "@metamask/safe-event-emitter" "^2.0.0"
+    json-rpc-random-id "^1.0.1"
+    pify "^3.0.0"
+
 eth-ens-namehash@2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/eth-ens-namehash/-/eth-ens-namehash-2.0.8.tgz#229ac46eca86d52e0c991e7cb2aef83ff0f68bcf"
@@ -1941,22 +1950,21 @@ eth-json-rpc-middleware@^1.5.0:
     promise-to-callback "^1.0.0"
     tape "^4.6.3"
 
-eth-json-rpc-middleware@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/eth-json-rpc-middleware/-/eth-json-rpc-middleware-6.0.0.tgz#4fe16928b34231a2537856f08a5ebbc3d0c31175"
-  integrity sha512-qqBfLU2Uq1Ou15Wox1s+NX05S9OcAEL4JZ04VZox2NS0U+RtCMjSxzXhLFWekdShUPZ+P8ax3zCO2xcPrp6XJQ==
+eth-json-rpc-middleware@^8.0.2:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/eth-json-rpc-middleware/-/eth-json-rpc-middleware-8.1.0.tgz#d2bf980768b43dcbcb7830ed1fcc34a16f63074d"
+  integrity sha512-0ZZDr6KoddqN4N100a7YWzLTYrVN0P49DJ3Su1vsRavPpieq92rgZymnQcr0tLFBQDEJg1MVqLex46fA0GEkDA==
   dependencies:
+    "@metamask/safe-event-emitter" "^2.0.0"
     btoa "^1.2.1"
     clone "^2.1.1"
-    eth-query "^2.1.2"
-    eth-rpc-errors "^3.0.0"
+    eth-block-tracker "^5.0.1"
+    eth-rpc-errors "^4.0.3"
     eth-sig-util "^1.4.2"
-    ethereumjs-util "^5.1.2"
-    json-rpc-engine "^5.3.0"
+    json-rpc-engine "^6.1.0"
     json-stable-stringify "^1.0.1"
-    node-fetch "^2.6.1"
+    node-fetch "^2.6.7"
     pify "^3.0.0"
-    safe-event-emitter "^1.0.1"
 
 eth-lib@0.2.8:
   version "0.2.8"
@@ -1987,17 +1995,17 @@ eth-query@^2.0.2, eth-query@^2.1.0, eth-query@^2.1.2:
     json-rpc-random-id "^1.0.0"
     xtend "^4.0.1"
 
-eth-rpc-errors@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eth-rpc-errors/-/eth-rpc-errors-3.0.0.tgz#d7b22653c70dbf9defd4ef490fd08fe70608ca10"
-  integrity sha512-iPPNHPrLwUlR9xCSYm7HHQjWBasor3+KZfRvwEWxMz3ca0yqnlBeJrnyphkGIXZ4J7AMAaOLmwy4AWhnxOiLxg==
-  dependencies:
-    fast-safe-stringify "^2.0.6"
-
 eth-rpc-errors@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/eth-rpc-errors/-/eth-rpc-errors-4.0.2.tgz#11bc164e25237a679061ac05b7da7537b673d3b7"
   integrity sha512-n+Re6Gu8XGyfFy1it0AwbD1x0MUzspQs0D5UiPs1fFPCr6WAwZM+vbIhXheBFrpgosqN9bs5PqlB4Q61U/QytQ==
+  dependencies:
+    fast-safe-stringify "^2.0.6"
+
+eth-rpc-errors@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/eth-rpc-errors/-/eth-rpc-errors-4.0.3.tgz#6ddb6190a4bf360afda82790bb7d9d5e724f423a"
+  integrity sha512-Z3ymjopaoft7JDoxZcEb3pwdGh7yiYMhOwm2doUt6ASXlMavpNlK6Cre0+IMl2VSGyEU9rkiperQhp5iRxn5Pg==
   dependencies:
     fast-safe-stringify "^2.0.6"
 
@@ -3248,14 +3256,6 @@ json-rpc-engine@^3.4.0, json-rpc-engine@^3.6.0:
     promise-to-callback "^1.0.0"
     safe-event-emitter "^1.0.1"
 
-json-rpc-engine@^5.3.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/json-rpc-engine/-/json-rpc-engine-5.4.0.tgz#75758609d849e1dba1e09021ae473f3ab63161e5"
-  integrity sha512-rAffKbPoNDjuRnXkecTjnsE3xLLrb00rEkdgalINhaYVYIxDwWtvYBr9UFbhTvPB1B2qUOLoFd/cV6f4Q7mh7g==
-  dependencies:
-    eth-rpc-errors "^3.0.0"
-    safe-event-emitter "^1.0.1"
-
 json-rpc-engine@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/json-rpc-engine/-/json-rpc-engine-6.1.0.tgz#bf5ff7d029e1c1bf20cb6c0e9f348dcd8be5a393"
@@ -3881,10 +3881,12 @@ node-fetch@2.1.2:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.1.2.tgz#ab884e8e7e57e38a944753cec706f788d1768bb5"
   integrity sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=
 
-node-fetch@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
-  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+node-fetch@^2.6.7:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
+  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-fetch@~1.7.1:
   version "1.7.3"
@@ -5041,6 +5043,11 @@ tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
@@ -5531,6 +5538,11 @@ web3@1.2.11:
     web3-shh "1.2.11"
     web3-utils "1.2.11"
 
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+
 websocket@1.0.32:
   version "1.0.32"
   resolved "https://registry.yarnpkg.com/websocket/-/websocket-1.0.32.tgz#1f16ddab3a21a2d929dec1687ab21cfdc6d3dbb1"
@@ -5559,6 +5571,14 @@ whatwg-fetch@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
   integrity sha512-dcQ1GWpOD/eEQ97k66aiEVpNnapVj90/+R+SXTPYGHpYBBypfKJEQjLrvMZ7YXbKm21gXd4NcuxUTjiv1YtLng==
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which@^1.2.9:
   version "1.3.1"
